@@ -9,7 +9,6 @@
   --icon-color: #afb1b8;
   --second-icon-color: #000;
 }
-
 button {
   cursor: pointer;
 }
@@ -300,6 +299,10 @@ main {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+.backdrop.is-open body {
+  overflow: hidden;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -674,6 +677,10 @@ address {
   fill: var(--second-icon-color);
 }
 .subscribe .form-subscribe {
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -748,6 +755,10 @@ address {
   flex-direction: column;
 }
 .user-field {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
